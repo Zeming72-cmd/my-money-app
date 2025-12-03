@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
@@ -10,9 +11,11 @@ export default function Home() {
         </p>
         
         <div className="space-x-4">
-          <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow-md">
-            记一笔
-          </button>
+          <Link href="/add">
+            <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow-md">
+              记一笔
+            </button>
+          </Link>
           <button className="px-6 py-3 bg-white text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
             查看报表
           </button>
